@@ -2,10 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<!--    创建类，定义数组，list，map，set类型属性，生成对应的set方法-->
-<!--    1、集合类型的注入-->
+    <!--    创建类，定义数组，list，map，set类型属性，生成对应的set方法-->
+    <!--    1、集合类型的注入-->
     <bean id="stu" class="com.wyn.springdemo1.conllectiontype.Stu">
-    <!--数组类型的注入-->
+        <!--数组类型的注入-->
         <property name="courses">
             <array>
                 <value>java</value>
@@ -26,22 +26,22 @@
                 <entry key="PHP" value="php"></entry>
             </map>
         </property>
-<!--        set类型的注入-->
+        <!--        set类型的注入-->
         <property name="sets">
             <set>
                 <value>go</value>
                 <value>linux</value>
             </set>
         </property>
-<!--        list集合类型，泛型是course对象-->
-        <property name="courseList" >
+        <!--        list集合类型，泛型是course对象-->
+        <property name="courseList">
             <list>
                 <ref bean="course1"></ref>
                 <ref bean="course2"></ref>
             </list>
         </property>
     </bean>
-<!--    创建多个bean对象-->
+    <!--    创建多个bean对象-->
     <bean id="course1" class="com.wyn.springdemo1.conllectiontype.Course">
         <property name="cname" value="Spring"></property>
     </bean>

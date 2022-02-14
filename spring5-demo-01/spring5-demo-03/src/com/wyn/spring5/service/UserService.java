@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  */
 //在注解里面 value 属性值可以省略不写，
 //默认值是类名称，首字母小写
-    //默认userService
+//默认userService
 //    @Service(value = "userService")
 @Component(value = "userService")//<bean id="userService" class="包路径"/>
 public class UserService {
@@ -20,7 +20,8 @@ public class UserService {
     @Autowired//根据类型注入 创建对象
     @Qualifier(value = "userDaoImpl")
     private UserDao userDao;
-    public void add(){
+
+    public void add() {
         System.out.println("Service add.....");
         userDao.add();
     }

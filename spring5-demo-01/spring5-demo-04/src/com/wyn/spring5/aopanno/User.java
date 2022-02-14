@@ -13,8 +13,8 @@ import org.springframework.stereotype.Service;
 //@Service
 public class User {//被增强的类
 
-    public void add(){
-        int i = 10/0;
+    public void add() {
+        int i = 10 / 0;
         System.out.println("add...");
     }
 }

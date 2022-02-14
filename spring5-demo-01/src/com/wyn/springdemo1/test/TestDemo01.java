@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class TestDemo01 {
     @Test
-    public void testCollection(){
+    public void testCollection() {
         ApplicationContext context = new ClassPathXmlApplicationContext("conllection.xml");
         Stu stu = context.getBean("stu", Stu.class);
         stu.test();

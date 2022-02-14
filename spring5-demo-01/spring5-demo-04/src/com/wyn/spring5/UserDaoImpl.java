@@ -7,7 +7,7 @@ package com.wyn.spring5;
 public class UserDaoImpl implements UserDao {
     @Override
     public int add(int a, int b) {
-        return a+b;
+        return a + b;
     }
 
     @Override

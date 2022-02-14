@@ -21,7 +21,8 @@ public class Emp<test> {
                 "dept=" + dept +
                 '}';
     }
-    public void test(){
+
+    public void test() {
         System.out.println(dept);
     }
 }

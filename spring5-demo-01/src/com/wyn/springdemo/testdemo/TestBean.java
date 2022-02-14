@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class TestBean {
     @Test
-    public void testAdd(){
+    public void testAdd() {
         //加载spring配置文件
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("prom.xml");
         //获取配置创建的对象

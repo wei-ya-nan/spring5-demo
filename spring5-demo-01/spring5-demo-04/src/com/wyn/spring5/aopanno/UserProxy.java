@@ -11,9 +11,10 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect//生成代理对象
 public class UserProxy {//增强的类D
+
     //相同切入点的抽取
     @Pointcut(value = "execution(* com.wyn.spring5.aopanno.User.add(..))")
-    public void pointCut(){
+    public void pointCut() {
     }
 
 

@@ -15,7 +15,7 @@ public class UserService {
         this.userDao = userDao;
     }
 
-   public void add(){
+    public void add() {
         System.out.println("service.add.......");
         //原始创建对象 的方法。使用spring框架快速创建
 //        UserDao userDao = new UserDaoImpl();

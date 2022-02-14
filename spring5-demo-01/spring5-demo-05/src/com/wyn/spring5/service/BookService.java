@@ -13,7 +13,8 @@ import org.springframework.stereotype.Repository;
 public class BookService {
     @Autowired
     private BookDao bookDao;
-    public void addCrowd(Crowd cro){
+
+    public void addCrowd(Crowd cro) {
         bookDao.add(cro);
     }
 }

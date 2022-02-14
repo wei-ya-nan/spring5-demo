@@ -3,7 +3,8 @@ package com.wyn.springdemo.bean;
 /**
  * @author wei-ya-nan
  * @version 1.0
-// */
+ * //
+ */
 @SuppressWarnings("All")
 public class Emp {
     private String ename;
