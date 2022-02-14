@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
  * @version 1.0
  */
 @Repository
-public class BookDapImpl implements BookDao{
+public class BookDapImpl implements BookDao {
     //注入dao
     @Autowired
     private JdbcTemplate jdbcTemplate;

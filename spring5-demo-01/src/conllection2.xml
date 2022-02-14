@@ -6,13 +6,13 @@
        xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
-<!--共同属性的提取,提取list集合类型属性注入-->
+    <!--共同属性的提取,提取list集合类型属性注入-->
     <util:list id="bookList">
         <value>计算机网络</value>
         <value>java基础</value>
         <value>mysql优化</value>
     </util:list>
-<!--    提取list集合类型注入使用-->
+    <!--    提取list集合类型注入使用-->
     <bean id="book" class="com.wyn.springdemo1.conllectiontype.Book" scope="">
         <property name="list" ref="bookList"></property>
     </bean>

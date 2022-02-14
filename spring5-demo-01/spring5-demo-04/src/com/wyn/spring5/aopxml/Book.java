@@ -5,7 +5,7 @@ package com.wyn.spring5.aopxml;
  * @version 1.0
  */
 public class Book {
-    public void buy(){
+    public void buy() {
         System.out.println("Buy......");
     }
 }

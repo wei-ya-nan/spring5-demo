@@ -12,7 +12,7 @@ import java.util.Set;
 public class Stu {
     private String[] courses;
     private List<String> list;
-    private Map<String ,String> map;
+    private Map<String, String> map;
     private Set<String> sets;
     private List<Course> courseList;
 

@@ -21,7 +21,7 @@ public class JTest4 {
     private UserService userService;
 
     @Test
-    public void test1(){
+    public void test1() {
         userService.hh();
     }
 }

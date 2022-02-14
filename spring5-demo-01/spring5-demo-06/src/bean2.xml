@@ -32,7 +32,7 @@
         <!--配置事务参数-->
         <tx:attributes>
             <!--指定那种规则的方法添加事务-->
-<!--            <tx:method name="accountMoney"/>-->
+            <!--            <tx:method name="accountMoney"/>-->
             <tx:method name="account*" propagation="REQUIRED"></tx:method>
         </tx:attributes>
     </tx:advice>
