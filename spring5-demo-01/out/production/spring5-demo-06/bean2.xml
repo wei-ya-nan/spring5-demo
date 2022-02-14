@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--开启组件扫描-->
+    <context:component-scan base-package="com.wyn"></context:component-scan>
+<!--    &lt;!&ndash; 数据库连接池 &ndash;&gt;-->
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"-->
+<!--          destroy-method="close">-->
+<!--        <property name="url" value="jdbc:mysql:///db"/>-->
+<!--        <property name="username" value="root"/>-->
+<!--        <property name="password" value="root"/>-->
+<!--        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash;创建jdbcTemplate对象&ndash;&gt;-->
+<!--    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+<!--        &lt;!&ndash;注入dataSource&ndash;&gt;-->
+<!--        <property name="dataSource" ref="dataSource"></property>-->
+
+<!--    </bean>-->
+<!--    &lt;!&ndash;1、创建事务管理器&ndash;&gt;-->
+<!--    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+<!--        &lt;!&ndash;注入数据源&ndash;&gt;-->
+<!--        <property name="dataSource" ref="dataSource"></property>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash;2 配置事务通知&ndash;&gt;-->
+<!--    <tx:advice id="txadvice">-->
+<!--        &lt;!&ndash;配置事务参数&ndash;&gt;-->
+<!--        <tx:attributes>-->
+<!--            &lt;!&ndash;指定那种规则的方法添加事务&ndash;&gt;-->
+<!--&lt;!&ndash;            <tx:method name="accountMoney"/>&ndash;&gt;-->
+<!--            <tx:method name="account*" propagation="REQUIRED"></tx:method>-->
+<!--        </tx:attributes>-->
+<!--    </tx:advice>-->
+<!--    &lt;!&ndash;3 配置切入点和切面&ndash;&gt;-->
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;配置切面点&ndash;&gt;-->
+<!--        <aop:pointcut id="pt" expression="execution(* com.wyn.spring5.service.UserService.*(..))"/>-->
+<!--        &lt;!&ndash;配置切面 让事务加到具体的方法上去&ndash;&gt;-->
+<!--        <aop:advisor advice-ref="txadvice" pointcut-ref="pt"></aop:advisor>-->
+<!--    </aop:config>-->
+
+</beans>
